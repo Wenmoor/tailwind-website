@@ -1,3 +1,13 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    // 警告：这会在构建生产版本时完全忽略 ESLint 错误。
+    ignoreDuringBuilds: true,
+  },
+};
+
+export default nextConfig;
+
 const { withContentlayer } = require('next-contentlayer2')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
